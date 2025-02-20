@@ -10,11 +10,17 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { MatCardModule } from '@angular/material/card';
 import { HomeComponent } from './components/home/home.component';
 import { CardComponent } from './components/card/card.component';
 
 @NgModule({
-    declarations: [AppComponent, NavigationPageComponent, HomeComponent, CardComponent],
+    declarations: [
+        AppComponent,
+        NavigationPageComponent,
+        HomeComponent,
+        CardComponent,
+    ],
     imports: [
         BrowserModule,
         AppRoutingModule,
@@ -24,6 +30,7 @@ import { CardComponent } from './components/card/card.component';
         MatSidenavModule,
         MatIconModule,
         MatListModule,
+        MatCardModule,
     ],
     providers: [],
     bootstrap: [AppComponent],

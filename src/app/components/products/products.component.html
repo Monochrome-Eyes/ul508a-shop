@@ -1,1 +1,3 @@
-<p>products works!</p>
+<div class="products-container">
+    <app-card *ngFor="let p of products" [currentProduct]="p"></app-card>
+</div>

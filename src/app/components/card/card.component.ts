@@ -10,4 +10,7 @@ import { MatCardModule } from '@angular/material/card';
 export class CardComponent {
     @Input()
     imgUrl: string = '';
+
+    @Input()
+    description: string = '';
 }

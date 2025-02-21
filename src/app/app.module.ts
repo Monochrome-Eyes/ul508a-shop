@@ -13,6 +13,8 @@ import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { HomeComponent } from './components/home/home.component';
 import { CardComponent } from './components/card/card.component';
+import { AboutComponent } from './components/about/about.component';
+import { ProductsComponent } from './components/products/products.component';
 
 @NgModule({
     declarations: [
@@ -20,6 +22,8 @@ import { CardComponent } from './components/card/card.component';
         NavigationPageComponent,
         HomeComponent,
         CardComponent,
+        AboutComponent,
+        ProductsComponent,
     ],
     imports: [
         BrowserModule,

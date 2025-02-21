@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
+import { Product } from 'src/app/models/product';
 
 @Component({
     selector: 'app-card',
@@ -9,8 +10,5 @@ import { MatCardModule } from '@angular/material/card';
 })
 export class CardComponent {
     @Input()
-    imgUrl: string = '';
-
-    @Input()
-    description: string = '';
+    currentProduct: Product = new Product();
 }

@@ -3,38 +3,42 @@
         {
             "id": 1,
             "name": "Allen Bradley GuardLogix",
-            "image": "assets/AB_PLC1",
-            "price": 5000,
+            "image": "assets/AB_PLC1.jpg",
+            "price": 8000,
             "category": "PLC",
             "nomCurrentRating": 0.5,
-            "isULListed": true
+            "isULListed": true,
+            "description": "Allen-Bradly safety PLC"
         },
         {
             "id": 2,
             "name": "Allen Bradley CompactLogix",
-            "image": "assets/AB_PLC2",
-            "price": 8000,
+            "image": "assets/AB_PLC2.jpg",
+            "price": 5000,
             "category": "PLC",
             "nomCurrentRating": 0.5,
-            "isULListed": true
+            "isULListed": true,
+            "description": "Standard Allen-Bradley PLC"
         },
         {
             "id": 3,
             "name": "Siemens S7-1200",
-            "image": "assets/SI_PLC1",
+            "image": "assets/SI_PLC1.jpg",
             "price": 600,
             "category": "PLC",
             "nomCurrentRating": 0.5,
-            "isULListed": true
+            "isULListed": true,
+            "description": "Compact Siemens S7-1200"
         },
         {
             "id": 4,
             "name": "Siemens S7-1200",
-            "image": "assets/SI_PLC2",
+            "image": "assets/SI_PLC2.jpg",
             "price": 800,
             "category": "PLC",
             "nomCurrentRating": 0.5,
-            "isULListed": true
+            "isULListed": true,
+            "description": ""
         }
     ]
 }

@@ -6,4 +6,5 @@ export class Product {
     category: string = 'placeholder';
     nomCurrentRating: number = 0;
     isULListed: boolean = false;
+    description: string = '';
 }

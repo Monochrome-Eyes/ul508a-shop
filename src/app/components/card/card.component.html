@@ -1,5 +1,12 @@
 <mat-card class="product-card">
-    <mat-card-title>Big Title</mat-card-title>
-    <img [src]="imgUrl" />
-    <mat-card-footer>{{ description }}</mat-card-footer>
+    <mat-card-title class="product-card__title">{{
+        currentProduct.name
+    }}</mat-card-title>
+    <mat-card-subtitle class="product-card__subtitle"
+        >${{ currentProduct.price }} USD</mat-card-subtitle
+    >
+    <img [src]="currentProduct.image" class="product-card__img" />
+    <mat-card-footer class="product-card__footer">{{
+        currentProduct.description
+    }}</mat-card-footer>
 </mat-card>

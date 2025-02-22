@@ -1,3 +1,12 @@
-<div class="products-container">
-    <app-card *ngFor="let p of products" [currentProduct]="p"></app-card>
-</div>
+<header class="products-header">
+    <app-price-selector
+        (selectionRange)="setPriceRange($event)"
+    ></app-price-selector>
+    <button id="add-btn" routerLink="/add">Add Product</button>
+</header>
+
+<section>
+    <div class="products-container">
+        <app-card *ngFor="let p of products" [currentProduct]="p"></app-card>
+    </div>
+</section>

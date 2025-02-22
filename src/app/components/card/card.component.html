@@ -20,9 +20,11 @@
             >
                 View
             </button>
-            <button class="card-btn" d="delete">Delete</button>
+            <button class="card-btn" d="delete" (click)="deleteProduct()">
+                Delete
+            </button>
             <button
-                [routerLink]="['/edit_product', currentProduct.id]"
+                [routerLink]="['/edit', currentProduct.id]"
                 class="card-btn"
                 id="edit"
             >

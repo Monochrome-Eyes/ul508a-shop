@@ -1,0 +1,9 @@
+<h4>testing</h4>
+<mat-form-field>
+    <mat-label>Price Range</mat-label>
+    <mat-select (selectionChange)="selectionChange($event)">
+        <mat-option *ngFor="let price of prices" [value]="price.value">
+            {{ price.viewValue }}
+        </mat-option>
+    </mat-select>
+</mat-form-field>

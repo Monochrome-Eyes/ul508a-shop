@@ -8,6 +8,26 @@ import { ProductsService } from 'src/app/services/products.service';
     styleUrls: ['./products.component.scss'],
 })
 export class ProductsComponent implements OnInit {
+    priceRange: any;
+
+    setPriceRange(range: any) {
+        this.priceRange = range;
+        if (this.priceRange.lower == 0) {
+            this.productService.getAllProducts().subscribe((response) => {
+                this.products = response;
+            });
+        } else {
+            this.productService
+                .getProductsByPriceRange(
+                    this.priceRange.lower,
+                    this.priceRange.upper
+                )
+                .subscribe((response) => {
+                    this.products = response;
+                });
+        }
+    }
+
     products: Product[] = [];
 
     constructor(private productService: ProductsService) {}

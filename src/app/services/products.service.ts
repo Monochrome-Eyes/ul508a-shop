@@ -18,6 +18,19 @@ export class ProductsService {
     getProductById(id: number): Observable<Product> {
         return this.http.get<Product>(this.dataSource + '/' + id);
     }
+    getProductsByPriceRange(
+        lowerPrice: number,
+        upperPrice: number
+    ): Observable<Product[]> {
+        return this.http.get<Product[]>(
+            this.dataSource +
+                '/' +
+                '?price_gte=' +
+                lowerPrice +
+                '&price_lte=' +
+                upperPrice
+        );
+    }
     editProductById(id: number, edittedProduct: Product): Observable<Product> {
         return this.http.put<Product>(
             this.dataSource + '/' + id,

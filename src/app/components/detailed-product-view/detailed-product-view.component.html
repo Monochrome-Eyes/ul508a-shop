@@ -1,0 +1,17 @@
+<div class="container">
+    <!-- <app-card [currentProduct]="currentProduct"></app-card> -->
+    <img id="product-image" [src]="currentProduct.image" />
+    <div id="about-text">
+        <h1>{{ currentProduct.name }}</h1>
+        <h3><b>Category: </b>{{ currentProduct.category }}</h3>
+        <p>
+            <b>Descripton:</b>
+            {{ currentProduct.description }} Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Asperiores nulla sint minus reiciendis
+            a beatae adipisci doloribus cupiditate minima. Doloribus natus
+            debitis, cupiditate reprehenderit minus eveniet maxime totam aperiam
+            asperiores?
+        </p>
+        <p><b>Price:</b> ${{ currentProduct.price }} USD</p>
+    </div>
+</div>

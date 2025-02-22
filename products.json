@@ -6,8 +6,6 @@
             "image": "assets/AB_PLC1.jpg",
             "price": 8000,
             "category": "PLC",
-            "nomCurrentRating": 0.5,
-            "isULListed": true,
             "description": "Allen-Bradly safety PLC"
         },
         {
@@ -16,8 +14,6 @@
             "image": "assets/AB_PLC2.jpg",
             "price": 5000,
             "category": "PLC",
-            "nomCurrentRating": 0.5,
-            "isULListed": true,
             "description": "Standard Allen-Bradley PLC"
         },
         {
@@ -26,8 +22,6 @@
             "image": "assets/SI_PLC1.jpg",
             "price": 600,
             "category": "PLC",
-            "nomCurrentRating": 0.5,
-            "isULListed": true,
             "description": "Compact Siemens S7-1200"
         },
         {
@@ -36,8 +30,6 @@
             "image": "assets/SI_PLC2.jpg",
             "price": 800,
             "category": "PLC",
-            "nomCurrentRating": 0.5,
-            "isULListed": true,
             "description": "Standard Siemens S7-1200"
         }
     ]

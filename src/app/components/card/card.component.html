@@ -1,12 +1,33 @@
 <mat-card class="product-card">
-    <mat-card-title class="product-card__title">{{
-        currentProduct.name
-    }}</mat-card-title>
-    <mat-card-subtitle class="product-card__subtitle"
-        >${{ currentProduct.price }} USD</mat-card-subtitle
-    >
-    <img [src]="currentProduct.image" class="product-card__img" />
-    <!-- <mat-card-footer class="product-card__footer">{{
+    <div [routerLink]="['/products', currentProduct.id]">
+        <mat-card-title class="product-card__title">{{
+            currentProduct.name
+        }}</mat-card-title>
+        <mat-card-subtitle class="product-card__subtitle"
+            >${{ currentProduct.price }} USD</mat-card-subtitle
+        >
+        <img [src]="currentProduct.image" class="product-card__img" />
+        <!-- <mat-card-footer class="product-card__footer">{{
         currentProduct.description
     }}</mat-card-footer> -->
+    </div>
+    <mat-card-footer>
+        <div class="product-card__buttons">
+            <button
+                [routerLink]="['/products', currentProduct.id]"
+                class="card-btn"
+                id="view"
+            >
+                View
+            </button>
+            <button class="card-btn" d="delete">Delete</button>
+            <button
+                [routerLink]="['/edit_product', currentProduct.id]"
+                class="card-btn"
+                id="edit"
+            >
+                Edit
+            </button>
+        </div>
+    </mat-card-footer>
 </mat-card>

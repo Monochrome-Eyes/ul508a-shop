@@ -10,8 +10,18 @@
     #{&}__img {
         margin-top: 5px;
         margin-bottom: 8px;
+        max-width: 300px;
     }
     #{&}__footer {
         margin: $inner-margin;
+    }
+    #{&}__buttons {
+        display: flex;
+        justify-content: space-between;
+        .card-btn {
+            margin: 10px;
+        }
+        // #view {
+        // }
     }
 }

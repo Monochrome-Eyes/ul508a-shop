@@ -1,0 +1,17 @@
+.home-header {
+    display: flex;
+    max-height: 50px;
+    margin: 10px;
+
+    .img-container {
+        #logo {
+            max-width: auto;
+            height: 100%;
+        }
+    }
+
+    span {
+        font-weight: 800;
+        font-size: x-large;
+    }
+}

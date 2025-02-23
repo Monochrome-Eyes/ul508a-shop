@@ -22,9 +22,16 @@ export class ProductsService {
         lowerPrice: number,
         upperPrice: number
     ): Observable<Product[]> {
+        console.log(
+            'query',
+            this.dataSource +
+                '?price_gte=' +
+                lowerPrice +
+                '&price_lte=' +
+                upperPrice
+        );
         return this.http.get<Product[]>(
             this.dataSource +
-                '/' +
                 '?price_gte=' +
                 lowerPrice +
                 '&price_lte=' +

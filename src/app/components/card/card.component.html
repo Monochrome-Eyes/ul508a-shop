@@ -17,16 +17,23 @@
                 [routerLink]="['/products', currentProduct.id]"
                 class="card-btn"
                 id="view"
+                mat-stroked-button
             >
                 View
             </button>
-            <button class="card-btn" d="delete" (click)="deleteProduct()">
+            <button
+                class="card-btn"
+                id="delete"
+                (click)="deleteProduct()"
+                mat-stroked-button
+            >
                 Delete
             </button>
             <button
                 [routerLink]="['/edit', currentProduct.id]"
                 class="card-btn"
                 id="edit"
+                mat-stroked-button
             >
                 Edit
             </button>

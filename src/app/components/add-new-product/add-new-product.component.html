@@ -1,31 +1,54 @@
-<h1>Add New Product</h1>
-<form #form="ngForm" (ngSubmit)="onSubmit()">
-    <div>
-        <label>Name: </label>
-        <input type="text" name="name" [(ngModel)]="newProduct.name" />
-    </div>
-
-    <div>
-        <label>Image URL: </label>
-        <input type="url" name="image" [(ngModel)]="newProduct.image" />
-    </div>
-    <div>
-        <label>Price: </label>
-        <input type="text" name="price" [(ngModel)]="newProduct.price" />
-    </div>
-    <div>
-        <label>Category: </label>
-        <input type="text" name="category" [(ngModel)]="newProduct.category" />
-    </div>
-    <div>
-        <label>Description: </label>
-        <input
-            type="text"
-            name="description"
-            [(ngModel)]="newProduct.description"
-        />
-    </div>
-    <div>
-        <button type="submit">Submit</button>
-    </div>
-</form>
+<div class="container">
+    <form #form="ngForm" (ngSubmit)="onSubmit()" class="product-form">
+        <h1>Add New Product</h1>
+        <div class="product-form__row">
+            <label>Name: </label>
+            <input
+                type="text"
+                name="name"
+                [(ngModel)]="newProduct.name"
+                size="50"
+            />
+        </div>
+        <div class="product-form__row">
+            <label>Image URL: </label>
+            <input
+                type="url"
+                name="image"
+                [(ngModel)]="newProduct.image"
+                size="50"
+            />
+        </div>
+        <div class="product-form__row">
+            <label>Price: </label>
+            <input
+                type="number"
+                name="price"
+                [(ngModel)]="newProduct.price"
+                style="width: 385px"
+            />
+        </div>
+        <div class="product-form__row">
+            <label>Category: </label>
+            <input
+                type="text"
+                name="category"
+                [(ngModel)]="newProduct.category"
+                size="50"
+            />
+        </div>
+        <div class="product-form__row">
+            <label>Description: </label>
+            <textarea
+                type="text"
+                name="description"
+                [(ngModel)]="newProduct.description"
+                cols="50"
+            >
+            </textarea>
+        </div>
+        <div class="product-form__row">
+            <button type="submit" mat-stroked-button>Submit</button>
+        </div>
+    </form>
+</div>

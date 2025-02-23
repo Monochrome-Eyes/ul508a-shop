@@ -1,8 +1,15 @@
 <header class="products-header">
-    <app-price-selector
-        (selectionRange)="setPriceRange($event)"
-    ></app-price-selector>
-    <button id="add-btn" routerLink="/add">Add Product</button>
+    <h1 class="products-header__item">Product Listings</h1>
+    <div class="products-header__item">
+        <app-price-selector
+            (selectionRange)="setPriceRange($event)"
+        ></app-price-selector>
+    </div>
+    <div class="products-header__item">
+        <button mat-stroked-button id="add-btn" routerLink="/add">
+            Add Product
+        </button>
+    </div>
 </header>
 
 <section>

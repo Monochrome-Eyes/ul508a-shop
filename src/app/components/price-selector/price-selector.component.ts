@@ -1,6 +1,4 @@
 import { Component, EventEmitter, Output } from '@angular/core';
-import { MatSelectChange } from '@angular/material/select';
-import { Observer } from 'rxjs';
 
 @Component({
     selector: 'app-price-selector',
@@ -12,6 +10,7 @@ export class PriceSelectorComponent {
     selectionRange = new EventEmitter();
 
     selectionChange(event: any) {
+        console.log('price-selector event', event);
         this.selectionRange.emit(event.value);
     }
 
@@ -20,6 +19,7 @@ export class PriceSelectorComponent {
         { value: { lower: 0, upper: 300 }, viewValue: '0-300' },
         { value: { lower: 300, upper: 500 }, viewValue: '300-500' },
         { value: { lower: 500, upper: 700 }, viewValue: '500-700' },
-        { value: { lower: 700, upper: 10000 }, viewValue: '700-10000' },
+        { value: { lower: 700, upper: 1000 }, viewValue: '700-1000' },
+        { value: { lower: 1000, upper: 15000 }, viewValue: '1000-15000' },
     ];
 }

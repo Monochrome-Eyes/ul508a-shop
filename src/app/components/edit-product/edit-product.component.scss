@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.product-form {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    max-width: 400px;
+
+    #{&}__row {
+        margin: 10px 0px;
+    }
+
+    input {
+        height: 45px;
+    }
+
+    textarea {
+        height: 100px;
+    }
+}

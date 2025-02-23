@@ -25,9 +25,18 @@
             >
                 <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
             </button>
-            <span>final-project</span>
+            <img
+                src="assets/logo.png"
+                style="max-height: 100%; height: auto; margin: 0px 20px 0px 0px"
+            />
+            <span>Industrial Parts</span>
         </mat-toolbar>
         <!-- Add Content Here -->
-        <router-outlet></router-outlet>
+        <div class="wrapper">
+            <router-outlet></router-outlet>
+            <footer class="page-footer">
+                <b>Industrial Parts</b> | design by Samuel Shivy
+            </footer>
+        </div>
     </mat-sidenav-content>
 </mat-sidenav-container>

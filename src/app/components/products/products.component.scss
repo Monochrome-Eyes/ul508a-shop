@@ -8,6 +8,10 @@
 
 .products-header {
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
     padding: 50px 50px;
+
+    #{&}__item {
+        margin: 0px 50px;
+    }
 }
